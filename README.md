@@ -1,4 +1,4 @@
-# Basic-Apex-Frame-Detection-For-Video-Sequence
+# Basic-Apex-Frame-Detection-For-Micro-Expression-Video-Sequence
 
 Using SMIC database excel information.
 
