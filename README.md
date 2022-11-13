@@ -1,1 +1,3 @@
 # Basic-Apex-Frame-Detection-For-Video-Sequence
+
+Using SMIC database excel information...
