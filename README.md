@@ -1,7 +1,7 @@
 # Basic-Apex-Frame-Detection-For-Video-Sequence
 
-Using SMIC database excel information ...
-SMIC database have three subdatasets, include HS, VIS, NIR ...
+Using SMIC database excel information.
+SMIC database have three subdatasets, include HS, VIS, NIR.
 
 How to get the SMIC database?
 1. Sign the SMIC agreement.
