@@ -19,15 +19,15 @@ for i in range(len(SMIC_VIS_excel_data_array)):
     if(len(OnsetFrame)==4):
         OnsetFrame = "0" + OnsetFrame
 
-    # 数据集的根目录
+    # database root
     onset_path = 'E:/Ddisk0801/SMIC/SMIC_all_raw/SMIC_all_raw/NIR/' + 's' + Subject + '/micro/' + Emotion +'/' + Filename
     #print(onset_path)
-    # 对所有文件排序
+    # 文件排序
     lists = sorted(os.listdir(onset_path))
     #print(lists)
-    # 第一帧
+    # 第一個Frame
     firstFrame = []
-    # 第二帧
+    # 第二個 Frame
     secondFrame = []
 
 
@@ -44,15 +44,14 @@ for i in range(len(SMIC_VIS_excel_data_array)):
     foreground_list = []
     for list in lists:
         
-        y =  np.array(len(lists),dtype=int) #建立一個內容為0 長度為100的整數陣列
+        y =  np.array(len(lists),dtype=int) 
         fullfilename = []
         path = os.path.join(onset_path, list)
         get_path = path.split('/')[-1]
         get_path = re.sub('.bmp','',get_path)
         fullfilename = re.sub('image','',get_path)
         
-        # 当前帧
-        
+        #目前frame
         firstFrame = cv2.imread('E:/Ddisk0801/SMIC/SMIC_all_raw/SMIC_all_raw/VIS/' + 's' + Subject + '/micro/' + Emotion +'/' + Filename + '/' + OnsetFrame + '.bmp')
         print('E:/Ddisk0801/SMIC/SMIC_all_raw/SMIC_all_raw/VIS/' + 's' + Subject + '/micro/' + Emotion +'/' + Filename + '/' + OnsetFrame + '.bmp')
         a = str(int(OnsetFrame) + count)
